@@ -10,12 +10,13 @@ import com.nuclearfarts.beaconconfig.BeaconConfig;
 @Mixin(BeaconBlockEntity.class)
 public abstract class BeaconRangeMixin {
 	
-	@ModifyConstant(method = "applyPlayerEffects()V", constant = @Constant(intValue = 10, ordinal = 0))
+	//loom doesn't map these for some reason?
+	@ModifyConstant(method = {"applyPlayerEffects()V", "method_10940()V"}, constant = @Constant(intValue = 10, ordinal = 0))
 	private int getBeaconRangeGrowth(int i) {
 		return BeaconConfig.INSTANCE.range_level_increase;
 	}
 	
-	@ModifyConstant(method = "applyPlayerEffects()V", constant = @Constant(intValue = 10, ordinal = 1))
+	@ModifyConstant(method = {"applyPlayerEffects()V", "method_10940()V"}, constant = @Constant(intValue = 10, ordinal = 1))
 	private int getBeaconBaseRange(int i) {
 		return BeaconConfig.INSTANCE.range_base;
 	}
