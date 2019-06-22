@@ -1,0 +1,20 @@
+{
+	"range_level_increase": 10,
+	"range_base": 10,
+	"effects": [
+		[
+			"minecraft:speed",
+			"minecraft:haste"
+		],
+		[
+			"minecraft:resistance",
+			"minecraft:jump_boost"
+		],
+		[
+			"minecraft:strength"
+		],
+		[
+			"minecraft:regeneration"
+		]
+	]
+}

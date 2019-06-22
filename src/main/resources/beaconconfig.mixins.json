@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.nuclearfarts.beaconconfig.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BeaconRangeMixin",
+    "BeaconGuiFixMixin",
+    "BeaconScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "beaconconfig",
+  "version": "1.0.0",
+
+  "name": "Beacon Config",
+  "description": "Adds config options for beacons.",
+  "authors": [
+    "NuclearFarts"
+  ],
+  "contact": {
+    "sources": "https://github.com/Nuclearfarts/beacon-config/"
+  },
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nuclearfarts.beaconconfig.BeaconConfigMod"
+    ]
+  },
+  "mixins": [
+    "beaconconfig.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric-resource-loader-v0": "*"
+  }
+}
